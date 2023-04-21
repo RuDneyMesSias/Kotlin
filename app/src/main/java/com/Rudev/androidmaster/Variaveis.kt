@@ -9,13 +9,16 @@ package com.Rudev.androidmaster
 
  /**  A sintaxe para declaração  de variáveis usa pascal notation, onde informamos nome: tipo.*/
 
+
+ val age:Int = 30
+
 fun main(){
+
      /**
       * Variables Numéricas
       */
 
      //Int -2,147,483,647 a 2,147,483,647
-        val age:Int = 30
         var age2:Int = 30
      age2 = 29
 
@@ -44,6 +47,7 @@ fun main(){
      val stringExampl3:String = "4"
      val stringExampl4:String = "23"
 
+
      var stringConcatenada:String = "Olá "
      stringConcatenada = "Olá Me chamo $stringExampl2 tenho $age2 anos "
      println(stringConcatenada)
@@ -59,22 +63,91 @@ fun main(){
      val booleanExemplo2:Boolean =  false
      val booleanExemplo3:Boolean =  false
 
-//     println("Somado: ")
-//     println(age + age2)
+     println("Somado: ")
+     println(age + age2)
 
-//     println("Restar")
-//     println(age-age2)
+     println("Restar")
+     println(age-age2)
 
-//     println("Mutiplicar")
-//     println(age*age2)
+     println("Mutiplicar")
+     println(age*age2)
 
-//     println("Divisão")
-//     println(age/age2)
+     println("Divisão")
+     println(age/age2)
 
-//     println("Módulo")
-//     println(age % age2)
+     println("Módulo")
+     println(age % age2)
 
      var exemploSuma = age + floatExemplo.toInt()
+
+}
+
+fun variaveisNumericas(){
+    /**
+     * Variables Numéricas
+     */
+
+    //Int -2,147,483,647 a 2,147,483,647
+    var age2:Int = 30
+    age2 = 29
+
+    //Long -9,223,372,036,854,775,887 a 9,223,372,036,854,775,887
+    val exemplo:Long = 30
+    val exemplo2: Long = 30
+
+    //Float
+    val floatExemplo:Float  = 30.5f
+
+    //Double
+    val doubleExamplo:Double = 3241.3123123
+
+    /**
+     * Variables Alfauméricos
+     */
+
+    //Char
+    val charExamplo1:Char = 'e'
+    val charExamplo2:Char = '2'
+    val charExamplo3:Char = '@'
+
+    //String
+    val stringExamplo:String = "Rudev Messias "
+    val stringExampl2:String = "RUDNEY MESSIAS "
+    val stringExampl3:String = "4"
+    val stringExampl4:String = "23"
+
+    var stringConcatenada:String = "Olá "
+    stringConcatenada = "Olá Me chamo $stringExampl2 tenho $age2 anos "
+    println(stringConcatenada)
+
+    val examplo123:String = age.toString()
+
+    /**
+     * Variables Booleanas
+     */
+
+    //Boolean
+    val booleanExemplo:Boolean =  true
+    val booleanExemplo2:Boolean =  false
+    val booleanExemplo3:Boolean =  false
+
+    println("Somado: ")
+    println(age + age2)
+
+    println("Restar")
+    println(age-age2)
+
+    println("Mutiplicar")
+    println(age*age2)
+
+    println("Divisão")
+    println(age/age2)
+
+    println("Módulo")
+    println(age % age2)
+
+    var exemploSuma = age + floatExemplo.toInt()
+
 
 }
 
