@@ -24,9 +24,114 @@ abrangeria os números 7 e 8 tirados em um dado de 8 lados. ***/
 comparação de um valor.*/
 
 fun main(){
-    ifMutipleOR()
+    result(2)
+}
+
+fun result(value:Any){
+    when(value){
+        is Int -> value + value
+        is String -> println(value)
+        is Boolean -> if(value) println("Olá mundo")
+    }
+}
+
+fun getSemestre3(meses:Int) = when(meses){
+        in 1..6 -> "Primeiro Semestre"
+        in 7..12 -> "Primeiro Semestre"
+        !in 1..12 -> "Semestre não valido "
+        else -> "Nada!!!"
+    }
+
+fun getSemestre2(meses:Int):String{
+    return when(meses){
+        in 1..6 -> "Primeiro Semestre"
+        in 7..12 -> "Primeiro Semestre"
+        !in 1..12 -> "Semestre não valido "
+        else -> return  "Nada!!!"
+    }
+}
+
+fun getSemestre1(meses:Int):String{
+    val result = when(meses){
+        in 1..6 -> "Primeiro Semestre"
+        in 7..12 -> "Primeiro Semestre"
+        !in 1..12 -> "Semestre não valido "
+        else -> return  "Nada!!!"
+    }
+
+    return result
+}
+
+fun getSemestre(meses:Int){
+    when(meses){
+        in 1..6 -> println("Primeiro Semestre")
+        in 7..12 -> println("Primeiro Semestre")
+        !in 1..12 -> print("Semestre não valido ")
+    }
 
 }
+
+fun getTrimestre(meses:Int){
+    when(meses){
+        1, 2, 3 -> println("Primeiro Trimestre")
+        4, 5, 6 -> println("Segundo Trimestre")
+        7, 8, 9 -> println("Terceiro Trimestre")
+        10,11, 12 -> println("Quarto Trimestre")
+        else -> print("Não existe este Trimeste")
+    }
+}
+
+fun get1Meses(mes:Int){
+    when(mes){
+        1 -> println("IIIJaneiro")
+        2 -> println("Fevereiro")
+        3 -> println("Março")
+        4 -> println("Abril")
+        5 -> println("Maio")
+        6 -> println("Junho")
+        7 -> println("Julho")
+        8 -> println("Agosto")
+        9 -> println("Setembro")
+        10 -> println("Outubro")
+        11 -> {
+            println("Novembro")
+            println("Novembro_Duplicidade")
+        }
+        12 -> println("Dezembro")
+        else -> print("Não existe este mês")
+    }
+
+}
+
+fun getMonth(meses:Int){
+        if(meses == 1 ){
+            println("Janeiro")
+        }else if (meses == 2){
+            println("Fevereiro")
+        }else if (meses == 3){
+            println("Março")
+        }else if (meses == 4){
+            println("Abril")
+        }else if (meses == 5){
+            println("Maio")
+        }else if (meses == 6){
+            println("Junho")
+        }else if (meses == 7){
+            println("Julho")
+        }else if (meses == 8){
+            println("Agosto")
+        }else if (meses == 9){
+            println("Setembro")
+        }else if (meses == 10){
+            println("Outubro")
+        }else if (meses == 11){
+            println("Novembro")
+        }else if (meses == 12){
+            println("Dezembro")
+        }else{
+            println("Este mês não existe")
+        }
+    }
 
 fun ifMutipleOR(){
     var pet = "cat"
