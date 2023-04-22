@@ -1,6 +1,5 @@
 package com.Rudev.androidmaster
 
-<<<<<<< HEAD
 /**
  *      Use uma instrução **if**  para definir uma condição e executar algumas ações.
  * Por exemplo, se o usuário tirar o número da sorte, exiba uma mensagem vencedora.*/
@@ -134,13 +133,6 @@ fun getMonth(meses:Int){
         }
     }
 
-=======
-fun main(){
-    ifMutipleOR()
-
-}
-
->>>>>>> origin/main
 fun ifMutipleOR(){
     var pet = "cat"
     var isHappy = true
