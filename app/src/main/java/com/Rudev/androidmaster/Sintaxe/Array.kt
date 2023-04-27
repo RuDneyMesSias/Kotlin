@@ -36,7 +36,7 @@ fun main(){
     for((position, value )in weekDays.withIndex()){
         println("A posição $position, cliente $value ")
     }
-//for variavel in Array: 
+//for variavel in Array:
     for (weekDay in weekDays){
         println("Hora és $weekDay")
     }
