@@ -1,84 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context="com.Rudev.androidmaster.FirstApp.PrimeiroAppActivity">
 
-    <!--
-        FrameLayout
-    -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="22sp"
-        android:text="Olá Mundo1!!!"
+    <View
+        android:id="@+id/viewRoxo"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="@color/purple_200"
+        app:layout_constraintStart_toEndOf="@+id/viewVerde"
+        app:layout_constraintBottom_toTopOf="@+id/viewVerde"
         />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="22sp"
-        android:text="Olá Mundo2!!!"
+
+    <View
+        android:id="@+id/viewVerde"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:background="@color/teal_200"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         />
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:layout_width="wrap_content"
-        android:orientation="horizontal"
-        android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textSize="22sp"
-            android:text="Olá Mundo3!!!"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textSize="22sp"
-            android:text="Olá Mundo4!!!"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:textSize="22sp"
-            android:text="Olá Mundo5!!!"
-            />
-    </androidx.appcompat.widget.LinearLayoutCompat>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="22sp"
-        android:text="Olá Mundo6!!!"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="22sp"
-        android:text="Olá Mundo6!!!"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:textSize="22sp"
-        android:text="Olá Mundo6!!!"
-        />
-
-</androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>
 
