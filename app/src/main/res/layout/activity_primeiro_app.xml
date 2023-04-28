@@ -6,27 +6,40 @@
     android:layout_height="match_parent"
     tools:context="com.Rudev.androidmaster.FirstApp.PrimeiroAppActivity">
 
-    <View
-        android:id="@+id/viewRoxo"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="64dp"
+        android:text="Escreva seu Nome"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etNome"
+        android:layout_width="300dp"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:background="@color/purple_200"
-        app:layout_constraintStart_toEndOf="@+id/viewVerde"
-        app:layout_constraintBottom_toTopOf="@+id/viewVerde"
-        />
-
-
-    <View
-        android:id="@+id/viewVerde"
-        android:layout_width="125dp"
-        android:layout_height="125dp"
-        android:background="@color/teal_200"
+        android:text="PULSAR"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        />
-
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
