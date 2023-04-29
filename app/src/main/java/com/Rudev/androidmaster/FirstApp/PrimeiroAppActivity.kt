@@ -1,5 +1,6 @@
 package com.Rudev.androidmaster.FirstApp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -19,11 +20,11 @@ class PrimeiroAppActivity : AppCompatActivity() {
         btnStart.setOnClickListener {
             val nome = etNome.text.toString()
 
-            if (nome.isNotEmpty()){
-                Log.i("Rudney", "Botão Pulsando $nome")
+                if (nome.isNotEmpty()) {
+                    val intent  =   Intent(this, ResultadoActivity::class.java)
+                    intent.putExtra("EXTRA_NOME", nome)
+                    startActivity(intent)
             }
-
         }
-
     }
 }
