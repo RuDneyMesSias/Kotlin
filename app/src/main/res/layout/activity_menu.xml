@@ -7,12 +7,18 @@
     android:layout_margin="16dp"
     android:orientation="vertical"
     tools:context="com.Rudev.androidmaster.MenuActivity">
-    
+
     <Button
         android:id="@+id/btnSalvarApp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Salvar_App"/>
+        android:text="Salvar App" />
+
+    <Button
+        android:id="@+id/btnImcApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="iMC App" />
 
 
 </LinearLayout>
